@@ -1,0 +1,84 @@
+{
+    "logLevel": "DEBUG",
+    
+    "logging": {
+        "console": true,     
+        "file": true,        
+        "directory": "logs"  
+    },
+
+    "nagrywki": {
+        "organizerRole": "12345678901234567890",
+        "staffRole": "12345678901234567890",
+        "adminRole": "12345678901234567890",
+        "checkIntervalMs": 30000,
+        "autoJoinVoiceChannel": true
+    },
+
+    "marketing": {
+        "adminRole": "12345678901234567890",
+
+        "_comment_directorId": "ID uzytkownika Discord Dyrektora Marketingu. tu bot wysyla DM z raportem wyplat.",
+        "directorId": "12345678901234567890",
+
+        "_comment_roles": "ID rol Discord nadawanych automatycznie przez /dzial i /ranga. Zostaw pusty string, jesli dana rola jeszcze nie istnieje na serwerze, bot wtedy pominie nadawanie tej konkretnej roli i zaloguje ostrzezenie.",
+        "roles": {
+            "dzial": {
+                "nagrywajacy": "12345678901234567890",
+                "analityk": "12345678901234567890",
+                "aktor": "12345678901234567890"
+            },
+            "ranga": {
+                "junior": "12345678901234567890",
+                "regular": "12345678901234567890",
+                "senior": "12345678901234567890"
+            }
+        },
+		
+        "_comment_reportsChannelId": "Kanal, na ktory trafiaja zgloszenia z /raport-analizy (embed). Jesli puste, embed leci na kanal, z ktorego uzyto komendy.",
+        "reportsChannelId": "12345678901234567890",
+        
+        "_comment_reminders": "Automatyczne przypomnienie dla Dyrektora o zblizajacym sie koncu miesiaca (trzeba wygenerowac /raport-wyplat). Ustaw reminderChannelId, zeby przypomnienie szlo na kanal (z wzmianka roli adminRole) jesli puste, bot `sprobuje` wyslac DM na directorId zamiast tego. Jesli oba puste, przypomnienia sa wylaczone.",
+        "reminderChannelId": "12345678901234567890",
+        "reminderDaysBefore": [3, 1, 0],
+        "reminderCheckIntervalMs": 21600000
+    },
+
+    "tickets": {
+        "staffRole": "12345678901234567890",    
+        "adminRole": "12345678901234567890",    
+        "loggingChannel": "12345678901234567890",  
+        
+        "categories": {
+            "support": {
+                "name": "🎟️ : Podanie",  
+                "categoryId": "12345678901234567890",  
+                "description": "Piszesz podanie? Kliknij tutaj!"  
+            },
+            "report": {
+                "name": "🔗 : Pomoc",
+                "categoryId": "12345678901234567890",
+                "description": "Potrzebujesz pomocy? Kliknij tutaj!"
+            }
+        }
+    },
+
+    "welcome": {
+        "enabled": true,
+        "channel": "12345678901234567890",  
+        
+
+        "messages": {
+            "welcome": "# Witaj 👋\n☘️〢Powitajmy nowego użytkownika {user}!\n👥〢Obecnie jest nas: **{count}**",
+            "leave": "# Żegnaj👋\n✨〢Pożegnajmy się z użytkownikiem {user}\n👥〢Obecnie jest nas: **{count}**"
+        },
+        
+        "color": {
+            "welcome": "#F589E3",  
+            "leave": "#631156"     
+        },
+        
+        "thumbnail": true,      
+        "showTimestamp": true   
+    }
+}
