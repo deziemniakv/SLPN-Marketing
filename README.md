@@ -2,6 +2,8 @@
   <img src="https://i.imgur.com/Xfxvqzr.png" width="96" alt="Marketing Bot" />
 </p>
 
+---
+
 # Discord bot o Organizacji Nagrywek i Zarządzanie Marketingiem + Moderacja oraz 4FUN CMD
 
 Bot Discord napisany w [discord.js](https://discord.js.org/) v14 + [Mongoose](https://mongoosejs.com/) (MongoDB), łączący dwa główne systemy:
